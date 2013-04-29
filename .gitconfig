@@ -1,0 +1,20 @@
+[color]
+	sh = auto
+[color "sh"]
+	branch = yellow
+	workdir = blue bold
+	dirty = red
+[user]
+	name = Heikki Hulkko
+	email = heikki.hulkko@reaktor.fi
+[color]
+	ui = true
+[merge]
+	keepBackup = false
+	tool = custom
+[mergetool "default"]
+  keepTemporaries = false
+  keepBackup = false
+[core]
+	pager = less -FRX
+	excludesfile = /Users/hhulkko/.gitignore

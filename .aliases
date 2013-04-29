@@ -1,0 +1,9 @@
+alias tree='tree -C -I CVS'
+alias lsn="ls --color=none -F"
+alias ll="ls -l"
+alias la="ls -la"
+alias l="ls"
+alias datenow='date +%Y-%m-%d'
+alias grep='grep --color=auto'
+alias git-svn='git svn'
+alias h='history|egrep'

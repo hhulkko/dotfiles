@@ -1,0 +1,10 @@
+--type-set=ftl=.ftl
+--type-set=json=.json
+--type-set=elm=.elm
+--type-set=properties=.properties
+--type-add=php=.inc,.tpl,.module,.install
+--type-add=js=.ftl
+--type-add=html=.shtml
+--type-add=css=.sass
+--type-add=groovy=.gradle
+--pager=less -FRX

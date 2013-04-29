@@ -1,0 +1,11 @@
+--langdef=scala
+--langmap=scala:.scala
+--regex-scala=/^[^\*\/]*class[ \t]*([a-zA-Z0-9_]+)/\1/c,classes/
+--regex-scala=/^[^\*\/]*object[ \t]*([a-zA-Z0-9_]+)/\1/o,objects/
+--regex-scala=/^[^\*\/]*trait[ \t]*([a-zA-Z0-9_]+)/\1/t,traits/
+--regex-scala=/^[^\*\/]*case[ \t]*class[ \t]*([a-zA-Z0-9_]+)/\1/m,case-classes/
+--regex-scala=/^[^\*\/]*abstract[ \t]*class[ \t]*([a-zA-Z0-9_]+)/\1/a,abstract-classes/
+--regex-scala=/^[^\*\/]*def[ \t]*([a-zA-Z0-9_]+)[ \t]*.*[:=]/\1/f,functions/
+--regex-scala=/^[^\*\/]*val[ \t]*([a-zA-Z0-9_]+)[ \t]*[:=]/\1/V,values/
+--regex-scala=/^[^\*\/]*var[ \t]*([a-zA-Z0-9_]+)[ \t]*[:=]/\1/v,variables/
+--regex-scala=/^[^\*\/]*type[ \t]*([a-zA-Z0-9_]+)[ \t]*[\[<>=]/\1/T,types/
