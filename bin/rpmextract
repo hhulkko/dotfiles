@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$1" ] && [ ! -f $1 ]; then
+  echo "Usage $0 <rpm_file>"
+  exit 0
+fi
+
+EXTRACT_DIR="$1_extracted"
+mkdir $EXTRACT_DIR
+cd $EXTRACT_DIR
+rpm2cpio ../`basename $1` | cpio -idmv

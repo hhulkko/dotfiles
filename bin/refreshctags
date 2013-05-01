@@ -1,0 +1,11 @@
+#!/bin/sh
+
+SOURCES_FILE=`pwd`/.sources.txt
+SOURCES=""
+if [ -f $SOURCES_FILE ]; then
+  SOURCES=`cat $SOURCES_FILE`
+  echo $SOURCES
+fi
+
+echo ctags -f ~/.tags --exclude=*.js -R `pwd`/* $SOURCES
+ctags -f ~/.tags --exclude=*.js -R `pwd`/* $SOURCES
