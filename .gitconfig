@@ -13,8 +13,8 @@
 	keepBackup = false
 	tool = custom
 [mergetool "default"]
-  keepTemporaries = false
-  keepBackup = false
+	keepTemporaries = false
+	keepBackup = false
 [core]
 	pager = less -FRX
 	excludesfile = /Users/hhulkko/.gitignore
