@@ -5,8 +5,8 @@
 	workdir = blue bold
 	dirty = red
 [user]
-	name = Heikki Hulkko
-	email = heikki.hulkko@reaktor.fi
+	name = hhulkko
+	email = heikki.hulkko@iki.fi
 [color]
 	ui = true
 [merge]
