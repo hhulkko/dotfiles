@@ -1,12 +1,5 @@
-alias tree='tree -C -I CVS'
+alias tree='tree -C'
 alias lsn="ls --color=none -F"
-alias ll="ls -l"
-alias la="ls -la"
-alias l="ls"
-alias datenow='date +%Y-%m-%d'
-alias grep='grep --color=auto'
-alias git-svn='git svn'
-alias h='history|egrep'
 alias mvnfind='find ~/.m2 -name \*.jar|xargs zipfind $*'
 alias ivyfind='find ~/.ivy2 -name \*.jar|xargs zipfind $*'
 alias gradlefind='find ~/.gradle -name \*.jar|xargs zipfind $*'
