@@ -61,6 +61,6 @@ set errorformat+=,%-G%.%#
 noremap <silent> <Leader>ff :cf target/quickfix/sbt.quickfix<CR>
 noremap <silent> <Leader>fn :cn<CR>
 
-"set grepprg=ag
-"command -nargs=+ Grep execute 'silent lgrep! --nocolor --smart-case <args>'|lwindow|redraw!
-"nmap <Leader>G :Grep <C-R>=expand("<cword>")<CR><CR>
+set grepprg=ag
+command -nargs=+ Grep execute 'silent lgrep! --nocolor --smart-case <args>'|lwindow|redraw!
+nmap <Leader>G :Grep <C-R>=expand("<cword>")<CR><CR>
