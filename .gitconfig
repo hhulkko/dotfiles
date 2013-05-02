@@ -18,3 +18,5 @@
 [core]
 	pager = less -FRX
 	excludesfile = /Users/hhulkko/.gitignore
+[alias]
+	lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cred%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative
