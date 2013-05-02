@@ -11,6 +11,10 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
+if [ -f ~/.private_aliases ]; then
+  . ~/.private_aliases
+fi
+
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
