@@ -7,5 +7,4 @@ if [ -f $SOURCES_FILE ]; then
   echo $SOURCES
 fi
 
-echo ctags -f ~/.tags --exclude=*.js -R `pwd`/* $SOURCES
-ctags -f ~/.tags --exclude=*.js -R `pwd`/* $SOURCES
+ctags -f ~/.tags --exclude=*.js --exclude=target -R `pwd`/* $SOURCES
