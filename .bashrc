@@ -38,3 +38,7 @@ export EDITOR=vim
 export PS1='\[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
 export CLICOLOR=1
 export JAVA_HOME=`/usr/libexec/java_home`
+
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
