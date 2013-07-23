@@ -64,3 +64,7 @@ noremap <silent> <Leader>fn :cn<CR>
 set grepprg=ag
 command -nargs=+ Grep execute 'silent lgrep! --nocolor --smart-case <args>'|lwindow|redraw!
 nmap <Leader>G :Grep <C-R>=expand("<cword>")<CR><CR>
+
+" vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
