@@ -24,10 +24,7 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
 shopt -s histappend
 shopt -s dotglob
 
@@ -42,7 +39,6 @@ export JAVA_HOME=`/usr/libexec/java_home`
 # ocaml
 export PATH=/Users/hhulkko/ocamlbrew/ocaml-4.00.1/bin:$PATH
 export OPAMROOT=/Users/hhulkko/ocamlbrew/ocaml-4.00.1/.opam
-eval `opam config env`
 
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
