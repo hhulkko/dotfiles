@@ -27,18 +27,3 @@ fi
 shopt -s checkwinsize
 shopt -s histappend
 shopt -s dotglob
-
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
-
-export EDITOR=vim
-export PS1='\[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
-export CLICOLOR=1
-export JAVA_HOME=`/usr/libexec/java_home`
-
-# ocaml
-export PATH=/Users/hhulkko/ocamlbrew/ocaml-4.00.1/bin:$PATH
-export OPAMROOT=/Users/hhulkko/ocamlbrew/ocaml-4.00.1/.opam
-
-# rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
