@@ -65,7 +65,8 @@ nmap <Leader>G :Grep <C-R>=expand("<cword>")<CR><CR>
 
 filetype off
 
-" vundle
+" install vundle with
+" :BundleInstall
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
