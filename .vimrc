@@ -10,8 +10,6 @@ set expandtab
 set ruler
 set backspace=2
 
-filetype plugin on
-
 " window resizing commands
 map <F1> :resize -10
 map <F2> :resize +10
@@ -65,6 +63,13 @@ set grepprg=ag
 command -nargs=+ Grep execute 'silent lgrep! --nocolor --smart-case <args>'|lwindow|redraw!
 nmap <Leader>G :Grep <C-R>=expand("<cword>")<CR><CR>
 
+filetype off
+
 " vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'roman/golden-ratio'
+
+filetype plugin indent on
