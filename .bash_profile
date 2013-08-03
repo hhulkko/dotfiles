@@ -3,7 +3,7 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/usr/local/share/python:$PATH"
+export PATH="$HOME/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
 unset USERNAME
 
 # rbenv
