@@ -44,6 +44,7 @@ hi statusline ctermfg=black
 au BufNewFile,BufRead Vagrantfile set syntax=ruby
 au BufNewFile,BufRead *.py set tabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.jad set syntax=java
+au BufNewFile,BufRead *.hs let &makeprg='hdevtools check %'
 
 set background=light
 set tags=~/.tags
@@ -72,5 +73,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'roman/golden-ratio'
+Bundle 'scroloose/syntastic'
+Bundle 'bitc/vim-hdevtools'
 
 filetype plugin indent on
