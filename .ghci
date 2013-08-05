@@ -11,6 +11,6 @@ import Data.Monoid
 import Control.Monad.IO.Class
 
 -- You must set your prompt to a lambda, it's a law.
-:set prompt "λ: "
+:set prompt "λ "
 
 :set -fno-warn-unused-imports
