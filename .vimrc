@@ -41,6 +41,7 @@ let java_allow_cpp_keywords=1
 
 hi statusline ctermbg=cyan
 hi statusline ctermfg=black
+hi Search ctermfg=white
 au BufNewFile,BufRead Vagrantfile set syntax=ruby
 au BufNewFile,BufRead *.py set tabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.jad set syntax=java
