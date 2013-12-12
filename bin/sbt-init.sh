@@ -14,7 +14,7 @@ version := "0.1"
 
 organization := "hhulkko"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 libraryDependencies ++= Seq(
   "net.databinder" %% "unfiltered-filter" % "0.7.0",
