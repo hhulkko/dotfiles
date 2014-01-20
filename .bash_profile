@@ -3,13 +3,8 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export PATH="$HOME/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
+export PATH="$HOME/bin:$HOME/.cabal/bin:$HOME/.opam/system/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
 unset USERNAME
-
-# ocaml
-export PATH=$HOME/ocamlbrew/ocaml-4.00.1/bin:$PATH
-export OPAMROOT=$HOME/ocamlbrew/ocaml-4.00.1/.opam
-if which opam > /dev/null; then eval `opam config env`; fi
 
 if [ -f /usr/libexec/java_home ]; then
   export JAVA_HOME=`/usr/libexec/java_home`
@@ -27,3 +22,5 @@ export LANG='en_GB.UTF-8'
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# OPAM configuration
+. $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
