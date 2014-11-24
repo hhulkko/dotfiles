@@ -17,6 +17,9 @@ export EDITOR=vim
 export PS1='\[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
 export CLICOLOR=1
 export LANG='en_GB.UTF-8'
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
