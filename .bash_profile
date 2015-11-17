@@ -29,5 +29,11 @@ export DOCKER_TLS_VERIFY=1
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# pyenv
+if which pyenv > /dev/null; then
+  eval "$(pyenv init -)";
+  pyenv virtualenvwrapper
+fi
+
 # OPAM configuration
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
