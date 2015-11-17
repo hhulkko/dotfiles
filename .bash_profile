@@ -3,8 +3,12 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export PATH="$HOME/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
+export PATH="$HOME/bin:$HOME/.cabal/bin:$HOME/.nix-profile/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
 unset USERNAME
+
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
+  . $HOME/.nix-profile/etc/profile.d/nix.sh
+fi
 
 if [ -f /usr/libexec/java_home ]; then
   export JAVA_HOME=`/usr/libexec/java_home`
