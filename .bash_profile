@@ -3,7 +3,6 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export PATH="$HOME/bin:$HOME/.cabal/bin:$HOME/.nix-profile/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH"
 unset USERNAME
 
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
@@ -24,6 +23,9 @@ export LANG='en_GB.UTF-8'
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+export GOPATH=$HOME/workspace/go/
+
+export PATH="$HOME/bin:$HOME/.cabal/bin:$HOME/.nix-profile/bin:/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:$PATH:$GOPATH/bin"
 
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
